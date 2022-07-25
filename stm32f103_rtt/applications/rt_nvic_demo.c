@@ -101,12 +101,12 @@ static void key_nvic_thread_entry(void *par)
             if(key1_date.use == RT_EOK )
             {
                 key1_date.use = !RT_EOK;
-                LOG_I("收到KEY1邮件 %d",r_queue);
+                LOG_I("收到KEY1消息 %d",r_queue);
             }
             if(key2_date.use == RT_EOK )
             {
                 key2_date.use = !RT_EOK;
-                LOG_I("收到KEY2邮件 %d",r_queue);
+                LOG_I("收到KEY2消息 %d",r_queue);
             }
             rt_thread_mdelay(10);
         }
